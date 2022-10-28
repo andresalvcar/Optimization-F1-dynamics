@@ -24,7 +24,7 @@ The track is discretized for making this problem computationally feasible.
 
 Once the layout and the car dynamics are modelled and the code is executed, we obtain our desired results. The first metric obtained is the optimal [friction circle](https://www.caranddriver.com/features/a15129563/how-to-read-a-friction-circle/). 
 
-<img src="https://user-images.githubusercontent.com/91897666/198276476-5adaebaf-0057-4500-85ea-7f1c24a5fbc0.png" width = "375" height="300">
+<img src="https://user-images.githubusercontent.com/91897666/198276476-5adaebaf-0057-4500-85ea-7f1c24a5fbc0.png" width = "300" height="225">
 
 The green points (straights) minimize the lateral forces and maximize the longitudinal forces (acceleration and breaking). Some of this points cannot been seen because they are superimposed between themselves. On the other hand, the points of the curves maximize the lateral forces and minimize the longitudinal forces. This means that, if the car accelerates in the middle of the turn, it will lose the control. 
 
@@ -32,7 +32,7 @@ The green points (straights) minimize the lateral forces and maximize the longit
 
 These 2 graphics show us the evolution of the longitudinal and lateral forces of the car along the circuit. These forces were optimized by our Matlab programs. 
 
-<img src="https://user-images.githubusercontent.com/91897666/198279315-5f35e875-9c6a-40a7-9d6a-f24416055886.png" width = "600" height="450">
+<img src="https://user-images.githubusercontent.com/91897666/198279315-5f35e875-9c6a-40a7-9d6a-f24416055886.png" width = "350" height="250">
 
 The first image represents the state of the driver's accelerator and breaking pedals. If the value is 7.5 it means that our fiction driver is pressing the accelerator pedal at its maximum point. On the other hand, when the graph reach the -10 value, the breaking pedal is totally pressed. 
 
@@ -42,7 +42,7 @@ The second graph corresponds to the steering wheel state. If the car is along th
 
 ## Velocity graphs
 
-<img src="https://user-images.githubusercontent.com/91897666/198284952-21991f96-c4a7-4ffd-8b58-360984c00aef.png" width = "600" height="450">
+<img src="https://user-images.githubusercontent.com/91897666/198284952-21991f96-c4a7-4ffd-8b58-360984c00aef.png" width = "350" height="250">
 
 The upper graphs show us the tangencial velocity, the tangencial acceleration and the normal acceleration. We are not talking about the last two of them because they correspond to the longitudinal and lateral forces that we mencioned before. 
 
@@ -52,7 +52,7 @@ We decided that our car has to begin the lap in a repose state, so it will be ea
 
 To conclude, we are going to show 4 different paths along our circuit and check which one is the best of them. All the pictures has a number above them. This number represents the lap time, so we want to reach the path that provides the fastest time. 
 
-<img src="https://user-images.githubusercontent.com/91897666/198293117-3c4bc5a1-c1c9-4a30-8dcc-64c2af68ad5d.png" width = "800" height="725">
+<img src="https://user-images.githubusercontent.com/91897666/198293117-3c4bc5a1-c1c9-4a30-8dcc-64c2af68ad5d.png" width = "350" height="300">
 
 The path that goes through the outside of the circuit is clearly the slowest of all of them. A priori, we can think that the path that goes through the inside of the layout could be the faster, because in this way the car travels less distance. The problem with this path is that it forces the car to take all the curve from the inside, so the driver has to break the most of the time. Finally, we have a layout that makes a combination of movements along the circuit, taking the curves as much open as it can. This path provide us the optimal time for our F1 car. 
 
